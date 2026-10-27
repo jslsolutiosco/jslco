@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSL · Desarrollo de Software</title>
+  <meta name="description" content="JSL Desarrollo de Software: diseñamos y desarrollamos software a medida para empresas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true">
+    <span class="orb orb-1" data-parallax="0.15"></span>
+    <span class="orb orb-2" data-parallax="-0.1"></span>
+    <span class="orb orb-3" data-parallax="0.08"></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="JSL Desarrollo de Software">
+        <img class="brand-mark" src="logo.svg" alt="">
+        <span class="brand-text">
+          <b>J S <em>L</em></b>
+          <small>Desarrollo de software</small>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="btn btn-outline nav-cta-mobile">Hablemos de tu proyecto →</a>
+      </nav>
+      <a href="#contacto" class="btn btn-outline nav-cta">Hablemos de tu proyecto <span>→</span></a>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="reveal">Transformamos ideas en soluciones digitales <span class="gold">extraordinarias.</span></h1>
+        <p class="reveal" data-delay="1">Diseñamos y desarrollamos software a medida para empresas que quieren trabajar mejor, crecer más rápido y aprovechar el poder de la tecnología.</p>
+        <div class="hero-actions reveal" data-delay="2">
+          <a href="#contacto" class="btn btn-gold">Cuéntanos tu idea <span>→</span></a>
+          <a href="#servicios" class="btn btn-ghost">Explorar soluciones</a>
+        </div>
+      </div>
+      <div class="hero-3d" id="hero3d">
+        <canvas id="logo3d" aria-label="Logo 3D de JSL animado"></canvas>
+        <div class="hero-3d-fallback" id="fallback"><img src="logo.svg" alt="Logo JSL"></div>
+      </div>
+    </div>
+    <a href="#propuesta" class="scroll-hint" aria-label="Desliza para descubrir">
+      <small>Desliza<br>para descubrir</small>
+      <span class="mouse"><span></span></span>
+    </a>
+  </section>
+
+  <!-- PROPUESTA -->
+  <section class="section propuesta" id="soluciones">
+    <div class="container propuesta-grid" id="propuesta">
+      <div class="propuesta-intro reveal">
+        <p class="eyebrow">Nuestra propuesta</p>
+        <h2>Tecnología creada alrededor de tus <span class="gold">necesidades.</span></h2>
+        <p class="muted">En JSL desarrollamos soluciones adaptadas a los procesos, objetivos y necesidades reales de cada cliente.</p>
+      </div>
+      <div class="propuesta-items">
+        <article class="prop-item reveal" data-delay="1">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/><path d="M8.5 12.5l2.5-2.5-2.5-2.5M15.5 11.5l-2.5 2.5 2.5 2.5" transform="translate(0 1)"/></svg></div>
+          <h3>Desarrollo a medida</h3>
+          <p>Soluciones flexibles y escalables que se ajustan a tu negocio.</p>
+          <span class="arrow">⟶</span>
+        </article>
+        <article class="prop-item reveal" data-delay="2">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></div>
+          <h3>Automatización inteligente</h3>
+          <p>Optimiza procesos y reduce tareas manuales.</p>
+          <span class="arrow">⟶</span>
+        </article>
+        <article class="prop-item reveal" data-delay="3">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="3"/><path d="M9 2h6M12 9v4l2 2"/></svg></div>
+          <h3>Soluciones preparadas para crecer</h3>
+          <p>Arquitecturas robustas que acompañan tu evolución.</p>
+          <span class="arrow">⟶</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section servicios" id="servicios">
+    <div class="container split">
+      <div class="split-head reveal">
+        <p class="eyebrow">Servicios</p>
+        <h2>Soluciones digitales para cada <span class="gold">necesidad.</span></h2>
+        <a href="#contacto" class="link">Ver todos los servicios →</a>
+      </div>
+      <div class="cards-grid">
+        <article class="card tilt reveal" data-delay="1">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></div>
+          <h3>Desarrollo web</h3>
+          <p>Sitios corporativos, plataformas web, portales y aplicaciones empresariales.</p>
+          <a href="#contacto" class="link">Conocer solución →</a>
+        </article>
+        <article class="card tilt reveal" data-delay="2">
+          <div class="icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></svg></div>
+          <h3>Sistemas de gestión empresarial</h3>
+          <p>Software para ventas, inventario, facturación, usuarios, reportes y más.</p>
+          <a href="#contacto" class="link">Conocer solución →</a>
+        </article>
+        <article class="card tilt reveal" data-delay="3">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+          <h3>Aplicaciones móviles</h3>
+          <p>Experiencias móviles que facilitan el trabajo y mejoran el acceso.</p>
+          <a href="#contacto" class="link">Conocer solución →</a>
+        </article>
+        <article class="card tilt reveal" data-delay="1">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5l1.6 2.3 2.8-.6.6 2.8 2.3 1.6-1.3 2.4 1.3 2.4-2.3 1.6-.6 2.8-2.8-.6L12 21.5l-1.6-2.3-2.8.6-.6-2.8-2.3-1.6L6 12l-1.3-2.4L7 8l.6-2.8 2.8.6z"/></svg></div>
+          <h3>Automatización de procesos</h3>
+          <p>Reduce tareas manuales, conecta sistemas y optimiza flujos de trabajo.</p>
+          <a href="#contacto" class="link">Conocer solución →</a>
+        </article>
+        <article class="card tilt reveal" data-delay="2">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M7 18a5 5 0 01-.6-9.96A6 6 0 0118 9a4.5 4.5 0 01-.5 9z"/></svg></div>
+          <h3>APIs e integraciones</h3>
+          <p>Conecta plataformas, servicios externos, bases de datos y sistemas.</p>
+          <a href="#contacto" class="link">Conocer solución →</a>
+        </article>
+        <article class="card tilt reveal" data-delay="3">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 16l3.5-4 3 2.5L17 9M14 9h3v3"/></svg></div>
+          <h3>Consultoría tecnológica</h3>
+          <p>Identifica oportunidades y selecciona las mejores soluciones.</p>
+          <a href="#contacto" class="link">Conocer solución →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section proyectos" id="proyectos">
+    <div class="container split">
+      <div class="split-head reveal">
+        <p class="eyebrow">Proyectos</p>
+        <h2>Del concepto a una <span class="gold">solución real.</span></h2>
+        <p class="muted">Explora algunos de nuestros proyectos, donde la tecnología se convierte en herramientas útiles para resolver problemas reales.</p>
+        <a href="#contacto" class="btn btn-outline btn-sm">Ver todos los proyectos →</a>
+      </div>
+      <div class="projects-grid">
+        <article class="project tilt reveal" data-delay="1">
+          <div class="project-media media-dashboard">
+            <span class="badge">Proyecto destacado</span>
+            <div class="mock-laptop"><i></i><i></i><i></i><i></i></div>
+            <div class="mock-phone small"></div>
+          </div>
+          <div class="project-body">
+            <h3>Sistema de gestión empresarial</h3>
+            <p>Plataforma para administrar ventas, inventario, usuarios y reportes.</p>
+            <p class="tech">Tecnologías: Laravel, Vue, MySQL</p>
+            <a href="#contacto" class="btn btn-outline btn-xs">Ver detalles →</a>
+          </div>
+        </article>
+        <article class="project tilt reveal" data-delay="2">
+          <div class="project-media media-mobile">
+            <div class="mock-phone"><b></b></div>
+            <div class="mock-phone back"><b></b></div>
+          </div>
+          <div class="project-body">
+            <h3>Aplicación móvil</h3>
+            <p>App para mejorar la productividad y el acceso a los servicios.</p>
+            <p class="tech">Tecnologías: Flutter, Firebase</p>
+            <a href="#contacto" class="btn btn-outline btn-xs">Ver detalles →</a>
+          </div>
+        </article>
+        <article class="project tilt reveal" data-delay="3">
+          <div class="project-media media-brand">
+            <div class="mini-logo"><img src="logo.svg" alt=""><b>J S <em>L</em></b><small>Desarrollo de software</small></div>
+          </div>
+          <div class="project-body">
+            <h3>Producto propio</h3>
+            <p>Herramientas digitales pensadas para el crecimiento de tu negocio.</p>
+            <p class="tech">Tecnologías: React, Tailwind</p>
+            <a href="#contacto" class="btn btn-outline btn-xs">Ver detalles →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section proceso" id="nosotros">
+    <div class="container proceso-inner">
+      <div class="reveal">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2 class="h2-sm">Un proceso claro.<br>Soluciones bien construidas.</h2>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="step reveal" data-delay="1"><span class="num">01</span><h3>Descubrimiento</h3><p>Entendemos el negocio, sus problemas y objetivos.</p></li>
+        <li class="step reveal" data-delay="2"><span class="num">02</span><h3>Diseño y planificación</h3><p>Definimos la experiencia, funcionalidades y arquitectura.</p></li>
+        <li class="step reveal" data-delay="3"><span class="num">03</span><h3>Desarrollo y pruebas</h3><p>Construimos, probamos y refinamos el producto.</p></li>
+        <li class="step reveal" data-delay="4"><span class="num">04</span><h3>Lanzamiento y evolución</h3><p>Implementamos la solución y planificamos su crecimiento.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DIFERENCIACIÓN -->
+  <section class="section diferencia">
+    <div class="diferencia-art" aria-hidden="true" data-parallax="-0.12">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container diferencia-inner">
+      <div class="reveal">
+        <p class="eyebrow">Diferenciación</p>
+        <h2 class="h2-sm">No desarrollamos por desarrollar.<br><span class="gold">Resolvemos problemas.</span></h2>
+      </div>
+      <div class="dif-grid">
+        <div class="dif reveal" data-delay="1"><div class="icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-3.5-7.1"/><path d="M21 4v5h-5"/><circle cx="12" cy="12" r="2.5"/></svg></div><div><h3>Soluciones adaptadas al negocio</h3><p>Cada proyecto parte de un análisis real.</p></div></div>
+        <div class="dif reveal" data-delay="2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 015.4 5.4L11 21H3v-8z"/><path d="M12 9l3 3"/></svg></div><div><h3>Arquitectura preparada para evolucionar</h3><p>Tu código listo para el futuro del producto.</p></div></div>
+        <div class="dif reveal" data-delay="3"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><div><h3>Diseño intuitivo y fácil de utilizar</h3><p>Tecnología que se usa sin complicaciones.</p></div></div>
+        <div class="dif reveal" data-delay="4"><div class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8"/></svg></div><div><h3>Comunicación clara durante el proyecto</h3><p>Siempre informado, siempre en contacto.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-wave" aria-hidden="true" data-parallax="0.1"></div>
+    <div class="container cta-inner reveal">
+      <div>
+        <h2 class="h2-sm">Tu próxima gran idea<br>puede empezar aquí.</h2>
+        <p class="muted">Cuéntanos qué necesitas. Analizamos juntos cómo convertirlo en una solución digital útil para tu negocio.</p>
+      </div>
+      <a href="#contacto" class="btn btn-gold">Empezar mi proyecto <span>→</span></a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contacto" id="contacto">
+    <div class="container contacto-grid">
+      <div class="contacto-info reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2 class="h2-sm">Hablemos de tu proyecto.</h2>
+        <p class="muted">Estamos listos para ayudarte. Escríbenos y cuéntanos qué necesitas.</p>
+        <ul class="contact-list">
+          <li><span class="ci">◎</span> @jsl_solutions.co</li>
+          <li><span class="ci">✆</span> +57 300 123 4567</li>
+          <li><span class="ci">⌖</span> Medellín, Colombia</li>
+        </ul>
+        <p class="tagline">Soluciones digitales<br>a tu medida.</p>
+      </div>
+      <form class="form glass reveal" data-delay="1" id="contactForm" novalidate>
+        <div class="row">
+          <label>Nombre *<input name="nombre" required placeholder="Tu nombre"></label>
+          <label>Correo *<input name="correo" type="email" required placeholder="tu@correo.com"></label>
+        </div>
+        <div class="row">
+          <label>Empresa<input name="empresa" placeholder="Nombre de tu empresa"></label>
+          <label>WhatsApp<input name="whatsapp" type="tel" placeholder="+57 300 000 0000"></label>
+        </div>
+        <div class="row">
+          <label>Tipo de solución *
+            <select name="tipo" required>
+              <option value="">Selecciona una opción</option>
+              <option>Desarrollo web</option>
+              <option>Sistema de gestión</option>
+              <option>Aplicación móvil</option>
+              <option>Automatización de procesos</option>
+              <option>APIs e integraciones</option>
+              <option>Consultoría tecnológica</option>
+            </select>
+          </label>
+          <label>Presupuesto aproximado
+            <select name="presupuesto">
+              <option value="">Selecciona un rango</option>
+              <option>Menos de $5.000.000</option>
+              <option>$5.000.000 – $15.000.000</option>
+              <option>$15.000.000 – $40.000.000</option>
+              <option>Más de $40.000.000</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensaje *<textarea name="mensaje" rows="4" required placeholder="Cuéntanos sobre tu idea o proyecto…"></textarea></label>
+        <button class="btn btn-gold btn-block" type="submit">Enviar solicitud <span>→</span></button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img class="brand-mark" src="logo.svg" alt="">
+          <span class="brand-text"><b>J S <em>L</em></b><small>Desarrollo de software</small></span>
+        </a>
+        <p class="muted">Software a medida para empresas que quieren crecer.</p>
+      </div>
+      <div><h4>Navegación</h4><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#soluciones">Soluciones</a><a href="#proyectos">Proyectos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+      <div><h4>Servicios</h4><a href="#servicios">Desarrollo web</a><a href="#servicios">Sistemas de gestión</a><a href="#servicios">Aplicaciones móviles</a><a href="#servicios">Automatización</a><a href="#servicios">APIs e integraciones</a><a href="#servicios">Consultoría tecnológica</a></div>
+      <div><h4>Contacto</h4><span>@jsl_solutions.co</span><span>+57 300 123 4567</span><span>Medellín, Colombia</span></div>
+      <div><h4>Síguenos</h4><span>Instagram</span><span>LinkedIn</span></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> JSL Desarrollo de Software. Todos los derechos reservados.</span>
+      <span><a href="#">Aviso de privacidad</a> · <a href="#">Términos y condiciones</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="logo3d.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
